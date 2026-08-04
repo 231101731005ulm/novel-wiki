@@ -3,30 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hades - Persona Wiki</title>
+    <title>Romulus - Persona Wiki</title>
     <link rel="stylesheet" href="Color.css">
+    <style>
+        /* Tambahan style khusus untuk mempertegas warna elemen Drain/Resist */
+        .t-green { color: #55ffaa; font-weight: bold; }
+        .t-blue { color: #5cb1ff; font-weight: bold; }
+    </style>
 </head>
 <body>
     <div class="wiki-container">
         <!-- Bagian Atas: Gambar & Top Stats -->
         <div class="top-section">
             <div class="image-col">
-                <img src="Persona.jpg" alt="Hades">
-                <div class="img-label">DEATH</div>
+                <img src="Persona.jpg" alt="Romulus">
+                <div class="img-label">CHARIOT</div>
             </div>
             
             <div class="stats-col">
                 <div class="quotes">
-                    I am <a href="#">Hades</a>... King of the underworld who judges the evil and the righteous alike.<br>
+                    I am <a href="#">Romulus</a>... Knight of Macragge who judges the evil and protect the way of witch.<br>
                     I am thou... Thou art I... Let us walk this path together...
                 </div>
 
                 <table class="data-table">
                     <tr class="bg-purple">
-                        <th>Arcana</th><th>Type</th><th>Level</th><th>SP cost</th><th>Bonus</th><th>Returns °</th>
+                        <th>Arcana</th><th>Type</th><th>Level</th><th>SP cost</th><th>Bonus</th>
                     </tr>
                     <tr>
-                        <td><a href="#">Death</a></td><td>Water</td><td>57</td><td>76</td><td>St + 1</td><td>Torrent Card</td>
+                        <td><a href="#">Chariot</a></td><td>Earth</td><td>985</td><td>435</td><td>ALL +10</td>
                     </tr>
                 </table>
 
@@ -35,11 +40,11 @@
                         <th>Exclusive to</th><th>Traits</th><th>Ptalk</th>
                     </tr>
                     <tr>
-                        <td><a href="#">Michel</a></td><td>Gloomy</td><td><a href="#">Demeter</a> *</td>
+                        <td><a href="#">Romulus</a></td><td>Gloomy</td><td><a href="#">Lilya</a> *</td>
                     </tr>
                 </table>
 
-                <div class="lore">The king of Tartarus in Greek lore.</div>
+                <div class="lore">The knight of Ultramar rose to protect the world with the Witch. Famed for his application of magic and swordmanship also his wisdom.</div>
 
                 <div class="battle-stats-wrapper">
                     <table class="data-table flex-table">
@@ -47,25 +52,29 @@
                             <th>Atk</th><th>Def</th><th>Matk</th><th>Mdef</th>
                         </tr>
                         <tr>
-                            <td>202</td><td>206</td><td>153</td><td>158</td>
+                            <td>6.567</td><td>4.567</td><td>5.617</td><td>4.158</td>
                         </tr>
                     </table>
                     <!-- Stat Progress Bars -->
                     <div class="stat-bars">
-                        <div class="bar-row"><span class="b-label">Strength</span><span class="b-val">44</span><div class="bar-bg"><div class="bar-fill" style="width: 44%;"></div></div></div>
-                        <div class="bar-row"><span class="b-label">Vitality</span><span class="b-val">46</span><div class="bar-bg"><div class="bar-fill" style="width: 46%;"></div></div></div>
-                        <div class="bar-row"><span class="b-label">Dexterity</span><span class="b-val">54</span><div class="bar-bg"><div class="bar-fill" style="width: 54%;"></div></div></div>
-                        <div class="bar-row"><span class="b-label">Agility</span><span class="b-val">42</span><div class="bar-bg"><div class="bar-fill" style="width: 42%;"></div></div></div>
-                        <div class="bar-row"><span class="b-label">Luck</span><span class="b-val">41</span><div class="bar-bg"><div class="bar-fill" style="width: 41%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Strength</span><span class="b-val">867</span><div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Vitality</span><span class="b-val">866</span><div class="bar-bg"><div class="bar-fill" style="width: 100%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Dexterity</span><span class="b-val">854</span><div class="bar-bg"><div class="bar-fill" style="width: 98%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Agility</span><span class="b-val">842</span><div class="bar-bg"><div class="bar-fill" style="width: 96%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Luck</span><span class="b-val">841</span><div class="bar-bg"><div class="bar-fill" style="width: 96%;"></div></div></div>
                     </div>
                 </div>
 
+                <!-- Modifikasi Resist Melee, Drain Magic, 1/4 Light/Dark -->
                 <table class="data-table elements-table">
                     <tr class="bg-purple">
                         <th>Sw</th><th>Rn</th><th>Sk</th><th>Th</th><th>Hv</th><th>Fi</th><th>Wt</th><th>Wi</th><th>Er</th><th>Ic</th><th>El</th><th>Nc</th><th>Li</th><th>Dk</th><th>Al</th><th>Nr</th><th>Mn</th>
                     </tr>
                     <tr>
-                        <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="t-red">2x</td><td>Nu</td><td>-</td><td>-</td><td class="t-green">2/4</td><td>-</td><td class="t-red">1.5x</td><td>Nu</td><td class="t-red">2x</td><td>-</td><td>Nu</td><td>Nu</td>
+                        <td class="t-green">Rs</td><td class="t-green">Rs</td><td class="t-green">Rs</td><td class="t-green">Rs</td><td class="t-green">Rs</td>
+                        <td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td>
+                        <td class="t-green">1/4</td><td class="t-green">1/4</td>
+                        <td class="t-blue">Dr</td><td class="t-blue">Dr</td><td class="t-blue">Dr</td>
                     </tr>
                 </table>
             </div>
@@ -76,7 +85,7 @@
         <table class="data-table full-width text-left-td">
             <tr>
                 <th class="w-15 text-center bg-dark">Story</th>
-                <td>Collect the Yellow Owl Mask in <a href="#">Mt. Iwato</a>.</td>
+                <td>Collect the Blade of Arondight Mask in <a href="#">Mt. Iwato</a>.</td>
             </tr>
         </table>
 
@@ -86,25 +95,49 @@
                 <th class="w-10">Rank</th><th class="w-20">Skill</th><th>Effect</th>
             </tr>
             <tr>
-                <td class="text-center font-bold">1</td><td class="text-center font-bold"><a href="#">Malaques</a></td><td>Deal medium Water damage to an enemy group.</td>
+                <td class="text-center font-bold">1</td><td class="text-center font-bold"><a href="#">Igni Sign</a></td><td>Deal medium Fire damage to one enemy. 50% chance to inflict Burn.</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">3</td><td class="text-center font-bold"><a href="#">Mamudo</a></td><td>Deal instant Dark kill to an enemy group. (36% chance)</td>
+                <td class="text-center font-bold">2</td><td class="text-center font-bold"><a href="#">Silver Sword Mastery</a></td><td>Passive: Increases damage of all Sword-type attacks by 25%.</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">4</td><td class="text-center font-bold"><a href="#">Marin Karin</a></td><td>Deal Mind charm ailment to one enemy. (52% chance)</td>
+                <td class="text-center font-bold">3</td><td class="text-center font-bold"><a href="#">Quen Shield</a></td><td>Cast a magical barrier that nullifies 1 physical or magic attack for the user.</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">5</td><td class="text-center font-bold"><a href="#">Zandyne</a></td><td>Deal high Almighty damage to one enemy.</td>
+                <td class="text-center font-bold">4</td><td class="text-center font-bold"><a href="#">Aard Sweep</a></td><td>Deal medium Wind damage to all enemies. High chance to knock down.</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">6</td><td class="text-center font-bold"><a href="#">Malaquadyne</a></td><td>Deal high Water damage to an enemy group.</td>
+                <td class="text-center font-bold">5</td><td class="text-center font-bold"><a href="#">Vorpal Blade</a></td><td>Deal heavy Sword damage to all enemies. High critical rate.</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">8</td><td class="text-center font-bold"><a href="#">Bloody Honeymoon</a></td><td>Deal high Water + Light damage to all enemies. May confuse. (72% chance)</td>
+                <td class="text-center font-bold">6</td><td class="text-center font-bold"><a href="#">Axii Delusion</a></td><td>Deal Mind (Brainwash/Charm) ailment to all enemies. (65% chance)</td>
             </tr>
             <tr>
-                <td class="text-center font-bold">Mutation</td><td class="text-center font-bold"><a href="#">Dark Verdict</a></td><td>Deal high Dark damage to all enemies. May instantly kill. (50% chance)</td>
+                <td class="text-center font-bold">7</td><td class="text-center font-bold"><a href="#">Yrden Trap</a></td><td>Lower all enemies' Agility, Defense, and Evasion for 3 turns.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">8</td><td class="text-center font-bold"><a href="#">Hassou Tobi</a></td><td>Deal 8x light Sword damage to all enemies.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">9</td><td class="text-center font-bold"><a href="#">Toxicity Mutagen</a></td><td>Passive: Drain 20% of HP and SP from all physical damage dealt.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">10</td><td class="text-center font-bold"><a href="#">Megidolaon</a></td><td>Deal severe Almighty damage to all enemies.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">11</td><td class="text-center font-bold"><a href="#">Macragge's Valor</a></td><td>Buff all allies' Atk, Def, and Agility for 3 turns (Heat Riser effect).</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">12</td><td class="text-center font-bold"><a href="#">Ethereal Slash</a></td><td>Deal severe Almighty/Sword hybrid damage to one enemy. Ignores Resistances.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">Mutation</td><td class="text-center font-bold"><a href="#">Rend & Tear</a></td><td>Deal colossal Slash damage to one enemy. Guaranteed critical hit if target is debuffed.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">Mutation</td><td class="text-center font-bold"><a href="#">Ultima</a></td><td>Deal extreme Almighty magic damage to all enemies.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">Mutation</td><td class="text-center font-bold"><a href="#">Law of Surprise</a></td><td>Passive: 30% chance to automatically reflect any incoming attack back to the attacker.</td>
             </tr>
         </table>
 
@@ -114,14 +147,11 @@
                 <th class="w-20">Skill</th><th>Effect</th><th class="w-35">Order/Skill/Persona</th>
             </tr>
             <tr>
-                <td class="text-center font-bold">Grand Cross</td>
-                <td>The planets align to deal heavy Almighty<br>damage to all enemies.</td>
+                <td class="text-center font-bold">Wistoria Finalia</td>
+                <td>The Will of Sword and Wand align to deal heavy Almighty<br>damage to all enemies.</td>
                 <td class="fusion-list">
-                    1. Nova Kaiser - <a href="#">Apollo</a><br>
-                    2. Bloody Honeymoon - <b>Hades</b><br>
-                    3. Foamy Lover - <a href="#">Venus</a><br>
-                    4. Cross Fortune - <a href="#">Chronos</a><br>
-                    5. Crescent Mirror - <a href="#">Artemis</a>
+                    1. Helix Tide - <a href="#">Lilya</a><br>
+                    2. Titanic Corpus - <b>Romulus</b><br>
                 </td>
             </tr>
         </table>
