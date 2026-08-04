@@ -3,80 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Persona Card</title>
-
+    <title>Hades - Persona Wiki</title>
     <link rel="stylesheet" href="Color.css">
-
 </head>
 <body>
-
-    <body>
-
-<div class="persona-card">
-
-    <div class="top">
-
-        <img src="Persona.jpg" class="portrait">
-
-        <div class="info">
-
-            <div class="quote">
-                I am Rhadamanthus...
+    <div class="wiki-container">
+        <!-- Bagian Atas: Gambar & Top Stats -->
+        <div class="top-section">
+            <div class="image-col">
+                <img src="Persona.jpg" alt="Hades">
+                <div class="img-label">DEATH</div>
             </div>
-
-            <div class="grid">
-
-                <div class="cell">
-                    <span>Arcana</span>
-                    <b>Death</b>
+            
+            <div class="stats-col">
+                <div class="quotes">
+                    I am <a href="#">Hades</a>... King of the underworld who judges the evil and the righteous alike.<br>
+                    I am thou... Thou art I... Let us walk this path together...
                 </div>
 
-                <div class="cell">
-                    <span>Type</span>
-                    <b>None</b>
+                <table class="data-table">
+                    <tr class="bg-purple">
+                        <th>Arcana</th><th>Type</th><th>Level</th><th>SP cost</th><th>Bonus</th><th>Returns °</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Death</a></td><td>Water</td><td>57</td><td>76</td><td>St + 1</td><td>Torrent Card</td>
+                    </tr>
+                </table>
+
+                <table class="data-table">
+                    <tr class="bg-purple">
+                        <th>Exclusive to</th><th>Traits</th><th>Ptalk</th>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Michel</a></td><td>Gloomy</td><td><a href="#">Demeter</a> *</td>
+                    </tr>
+                </table>
+
+                <div class="lore">The king of Tartarus in Greek lore.</div>
+
+                <div class="battle-stats-wrapper">
+                    <table class="data-table flex-table">
+                        <tr class="bg-purple">
+                            <th>Atk</th><th>Def</th><th>Matk</th><th>Mdef</th>
+                        </tr>
+                        <tr>
+                            <td>202</td><td>206</td><td>153</td><td>158</td>
+                        </tr>
+                    </table>
+                    <!-- Stat Progress Bars -->
+                    <div class="stat-bars">
+                        <div class="bar-row"><span class="b-label">Strength</span><span class="b-val">44</span><div class="bar-bg"><div class="bar-fill" style="width: 44%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Vitality</span><span class="b-val">46</span><div class="bar-bg"><div class="bar-fill" style="width: 46%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Dexterity</span><span class="b-val">54</span><div class="bar-bg"><div class="bar-fill" style="width: 54%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Agility</span><span class="b-val">42</span><div class="bar-bg"><div class="bar-fill" style="width: 42%;"></div></div></div>
+                        <div class="bar-row"><span class="b-label">Luck</span><span class="b-val">41</span><div class="bar-bg"><div class="bar-fill" style="width: 41%;"></div></div></div>
+                    </div>
                 </div>
 
-                <div class="cell">
-                    <span>Level</span>
-                    <b>1</b>
-                </div>
-
-                <div class="cell">
-                    <span>SP Cost</span>
-                    <b>5</b>
-                </div>
-
-                <div class="cell">
-                    <span>Bonus</span>
-                    <b>ST +1</b>
-                </div>
-
+                <table class="data-table elements-table">
+                    <tr class="bg-purple">
+                        <th>Sw</th><th>Rn</th><th>Sk</th><th>Th</th><th>Hv</th><th>Fi</th><th>Wt</th><th>Wi</th><th>Er</th><th>Ic</th><th>El</th><th>Nc</th><th>Li</th><th>Dk</th><th>Al</th><th>Nr</th><th>Mn</th>
+                    </tr>
+                    <tr>
+                        <td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td class="t-red">2x</td><td>Nu</td><td>-</td><td>-</td><td class="t-green">2/4</td><td>-</td><td class="t-red">1.5x</td><td>Nu</td><td class="t-red">2x</td><td>-</td><td>Nu</td><td>Nu</td>
+                    </tr>
+                </table>
             </div>
-
         </div>
 
+        <!-- Tabel Bawah: Summon, Skills, Fusion -->
+        <div class="section-header">Summon Information</div>
+        <table class="data-table full-width text-left-td">
+            <tr>
+                <th class="w-15 text-center bg-dark">Story</th>
+                <td>Collect the Yellow Owl Mask in <a href="#">Mt. Iwato</a>.</td>
+            </tr>
+        </table>
+
+        <div class="section-header">List of Skills</div>
+        <table class="data-table full-width text-left-td">
+            <tr class="bg-purple">
+                <th class="w-10">Rank</th><th class="w-20">Skill</th><th>Effect</th>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">1</td><td class="text-center font-bold"><a href="#">Malaques</a></td><td>Deal medium Water damage to an enemy group.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">3</td><td class="text-center font-bold"><a href="#">Mamudo</a></td><td>Deal instant Dark kill to an enemy group. (36% chance)</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">4</td><td class="text-center font-bold"><a href="#">Marin Karin</a></td><td>Deal Mind charm ailment to one enemy. (52% chance)</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">5</td><td class="text-center font-bold"><a href="#">Zandyne</a></td><td>Deal high Almighty damage to one enemy.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">6</td><td class="text-center font-bold"><a href="#">Malaquadyne</a></td><td>Deal high Water damage to an enemy group.</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">8</td><td class="text-center font-bold"><a href="#">Bloody Honeymoon</a></td><td>Deal high Water + Light damage to all enemies. May confuse. (72% chance)</td>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">Mutation</td><td class="text-center font-bold"><a href="#">Dark Verdict</a></td><td>Deal high Dark damage to all enemies. May instantly kill. (50% chance)</td>
+            </tr>
+        </table>
+
+        <div class="section-header">Unique Fusion Spells</div>
+        <table class="data-table full-width text-left-td">
+            <tr class="bg-purple">
+                <th class="w-20">Skill</th><th>Effect</th><th class="w-35">Order/Skill/Persona</th>
+            </tr>
+            <tr>
+                <td class="text-center font-bold">Grand Cross</td>
+                <td>The planets align to deal heavy Almighty<br>damage to all enemies.</td>
+                <td class="fusion-list">
+                    1. Nova Kaiser - <a href="#">Apollo</a><br>
+                    2. Bloody Honeymoon - <b>Hades</b><br>
+                    3. Foamy Lover - <a href="#">Venus</a><br>
+                    4. Cross Fortune - <a href="#">Chronos</a><br>
+                    5. Crescent Mirror - <a href="#">Artemis</a>
+                </td>
+            </tr>
+        </table>
     </div>
-
-    <table class="stats">
-        <tr>
-            <th>Atk</th>
-            <th>Def</th>
-            <th>Matk</th>
-            <th>Mdef</th>
-        </tr>
-
-        <tr>
-            <td>8</td>
-            <td>10</td>
-            <td>6</td>
-            <td>9</td>
-        </tr>
-    </table>
-
-</div>
-
-</body>
-
 </body>
 </html>
